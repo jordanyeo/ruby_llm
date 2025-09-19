@@ -40,7 +40,7 @@ module RubyLLM
             model: model.id,
             messages: chat_messages.map { |msg| format_message(msg) },
             stream: stream,
-            max_tokens: model.max_tokens || 4096
+            max_tokens: model.max_tokens || 8192
           }
         end
 
